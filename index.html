@@ -2,33 +2,39 @@
 <html>
 <head>
 <style>
-.center {
-    position:absolute;
-    display:block;
-    height:100px;
-    width:100px;
-    left:50%;
-    top:50%;
-    margin-top:-50px;
-    margin-left:-50px;
-    background-color:red;
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.button {
-    width: 343px;
-    height: 44px;
-    background: rgb(248, 98, 82);
-    border-radius: 5px;    
+a:hover, a:active {
+  background-color: red;
 }
-    
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
 </style>
 </head>
 <body>
-    <div class="center">
-        <strong>Success</strong>
-        <p>Please open Smarp app</p>
-        <button class="button"><a href="https://login.smarpshare.com/" class="link">Open Smarp app</a></button>
-    </div>
+
+<div class="centered">
+<h2>Success!</h2>
+
+<br/> 
+<p>Please open Smarp app</p>
+<br/>
+<a href="default.asp">Open Smarp app</a>
+</div>
+
 </body>
 </html>
 
