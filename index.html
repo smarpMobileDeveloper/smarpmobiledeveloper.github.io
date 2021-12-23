@@ -2,18 +2,33 @@
 <html>
 <head>
 <style>
-.link {
-    padding:5px;
-    background:#6495ED;
-    color:#ccc;
-    font-size: 400%;
- }
+.center {
+    position:absolute;
+    display:block;
+    height:100px;
+    width:100px;
+    left:50%;
+    top:50%;
+    margin-top:-50px;
+    margin-left:-50px;
+    background-color:red;
+}
+
+.button {
+    width: 343px;
+    height: 44px;
+    background: rgb(248, 98, 82);
+    border-radius: 5px;    
+}
+    
 </style>
 </head>
 <body>
-    <ul>
-        <li> <button><a href="https://login.smarpshare.com/" class="link">CLICK ME</a></button></li>
-    </ul>
+    <div class="center">
+        <strong>Success</strong>
+        <p>Please open Smarp app</p>
+        <button class="button"><a href="https://login.smarpshare.com/" class="link">Open Smarp app</a></button>
+    </div>
 </body>
 </html>
 
